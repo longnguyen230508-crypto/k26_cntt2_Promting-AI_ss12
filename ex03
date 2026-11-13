@@ -1,0 +1,18 @@
+**Phần 1 (Phân tích cơ chế):** Dựa vào Mục 2.2 Lesson 02, giải thích cơ chế In-Context Learning giúp AI "bắt sóng" được ngữ cảnh như thế nào mà không cần train lại model.
+Cơ chế In-Context Learning (Học trong ngữ cảnh)
+Khả năng của LLM trong việc tự động nhận diện và học quy luật từ các ví dụ truyền vào Prompt.
+Chi tiết khái niệm:
+AI không sửa đổi trọng số bộ não mà 'học tạm thời' ngay trong phiên làm việc.
+Bộ não AI hoạt động dựa trên cơ chế In-Context Learning . Nghĩa là AI không cần được lập trình hay huấn luyện lại mô hình, mà tự học "nóng" quy luật từ chính các ví dụ bạn dán vào cuộc hội thoại!
+**Phần 2 (Sửa lỗi bằng Few-shot):** Thiết kế một Prompt Few-shot hoàn chỉnh chứa **3 cặp ví dụ mẫu (Input -&gt; Output)** dạy AI cách nhận diện các đánh giá mỉa mai, khen đểu về nhiệt độ, pin và thời gian giao hàng tại TechShop
+Bạn là chuyên gia phân tích phản hồi khách hàng tại TechShop. Nhiệm vụ của bạn là phân loại cảm xúc thực sự của đánh giá sản phẩm thành một trong hai nhãn: TÍCH CỰC hoặc TIÊU CỰC.
+Lưu ý đặc biệt: Khách hàng thường dùng lối nói mỉa mai, phóng đại hoặc khen đểu (dùng từ ngữ tích cực để chê bai lỗi kỹ thuật, nhiệt độ cao, pin yếu, giao hàng chậm)
+Hãy phân tích bản chất trải nghiệm sản phẩm thay vì chỉ dựa vào từ khóa bề mặt.
+Dưới đây là các ví dụ mẫu:
+Input: "Laptop chạy êm như tiếng máy cày ngoài ruộng, quạt tản nhiệt thổi bay luôn cả giấy tờ trên bàn, làm việc tập trung hẳn!"
+Output: TIÊU CỰC (Lý do: Khen đểu tiếng ồn lớn của quạt tản nhiệt và máy chạy quá nóng/ồn).
+Input: "Pin con này trâu thực sự, sạc đầy 100% lúc 8h sáng, lướt web nhẹ nhàng đến 9h30 đã báo yếu, giúp mình cai nghiện điện thoại cực hiệu quả."
+Output: TIÊU CỰC (Lý do: Mỉa mai thời lượng pin tụt quá nhanh chỉ sau 1.5 tiếng sử dụng).
+Input: "Dịch vụ giao hàng siêu tốc, đặt từ hồi đầu tháng mà tận cuối tháng mới thấy shipper gọi, quá tuyệt vời cho sự kiên nhẫn."
+Output: TIÊU CỰC (Lý do: Châm biếm thời gian giao hàng quá chậm trễ).
+Bây giờ, hãy phân loại đánh giá sau:
