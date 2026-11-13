@@ -1,0 +1,13 @@
+Cách đặt biến lộn xộn ([language] và {audience}) gây khó khăn vì:
+Xung đột mã: Hệ thống tự động hóa phải dùng nhiều bộ quy tắc quét khác nhau, dễ gây sót lỗi hoặc lỗi cú pháp .
+Không tương thích Template Engine: Các thư viện lập trình yêu cầu cú pháp đồng nhất để thay thế dữ liệu .
+Nhiễu ngữ cảnh AI: AI khó phân biệt rõ ràng đâu là biến hệ thống, đâu là văn bản thông thường.
+Khó bảo trì: Khi scale số lượng lớn prompt, việc thiếu quy chuẩn khiến việc quản lý và gỡ lỗi cực kỳ mất thời gian.
+Prompt mẫu hoàn chỉnh
+-> Hãy viết một bài chia sẻ về Cấu trúc Prompt Tiêu chuẩn & Định dạng bằng ngôn ngữ [language]. Dành cho đối tượng {audience}
+Cấu trúc dữ liệu đầu vào
+JSON
+template: Hãy viết một bài chia sẻ về Cấu trúc Prompt Tiêu chuẩn & Định dạng bằng ngôn ngữ [language]. Dành cho đối tượng {audience},
+variables:
+NGÔN_NGỮ: string Tiếng Việt
+ĐỐI_TƯỢNG: string (Ví dụ: Học sinh phổ thông, Lập trình viên mới, Quản lý dự án)"
