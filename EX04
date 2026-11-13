@@ -1,0 +1,13 @@
+Phần 1: Phân tích nguyên nhân lỗi 
+  1. Chỉ ra lý do tại sao AI thường có thói quen tự động sinh ra lời chào hỏi và lời chúc kết luận.  
+Phần 2: Hoàn thiện Prompt ép cấu trúc
+  2. Viết lại Prompt hoàn chỉnh với kỹ thuật Negative Constraint và Định dạng đầu ra nghiêm ngặt 
+("Chỉ trả về chuỗi JSON thuần túy, không dùng markdown block, không giải thích, bắt đầu bằng { và kết thúc bằng }") để hệ thống backend parse thành công 100%.
+
+
+p1:
+- lý do ai thường có thói quen tự động sinh ra lời chào hỏi và lời chúc kết luận vì AI trên web được xây dựng để thương mại với mọi đối tượng người dùng có thể truy cập
+internet vì thế một lời chào, lời chúc kết luận là kiểu lịch sự tối thiểu nhất mà các kỹ sư thêm vào. chúng ta có thể thêm một Explanation để AI không gửi lời chào và lời chúc nữa.
+p2:
+Viết lại Prompt hoàn chỉnh với kỹ thuật Negative Constraint :
+- { không câu chào hỏi, không câu chúc kết luận, đi thẳng vào vấn đề chính, không thêm icon lạ}
