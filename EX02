@@ -1,0 +1,14 @@
+p1
+1. Xác định các dòng bị xếp sai
+Các dòng bị phân loại sai cấp độ Prompting trong bảng là: 1, 2, 4, và 5.(Các dòng 3 và 6 đã được phân loại đúng là One-shot).
+2. Giải thích chi tiết lý do sai
+Dòng 1 (Đang là Few-shot 
+ Sửa thành Zero-shot):
+Dòng 2 (Đang là One-shot 
+ Sửa thành Zero-shot):
+Dòng 4 (Đang là Zero-shot 
+ Sửa thành Few-shot):
+Dòng 5 (Đang là Few-shot 
+ Sửa thành Zero-shot):
+p2: bảng đã được sửa như sau:
+https://docs.google.com/document/d/1CJX_ToucNjlfyfsDvanxeIR4W7dQ6P9o8GE8tWuXiWM/edit?usp=sharing
